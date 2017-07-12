@@ -1,5 +1,5 @@
 app:
   build:
-    image: alinuxninja/libvdeplug2-builder-Debian_9.0
+    image: alinuxninja/libvdeplug2-builder-debian_9.0
     dockerfile: Dockerfile
     encrypted_args_file: build_args.env.encrypted 
