@@ -12,6 +12,10 @@ RUN mkdir source repo
 WORKDIR /root/source
 ADD src/sources.list /etc/apt/sources.list
 
+## Install gnupg
+RUN apt-get update \
+&& apt-get -y install gnupg2
+
 ## Install OSC and required packages
 ADD http://download.opensuse.org/repositories/openSUSE:Tools/Debian_9.0/Release.key Release.key
 RUN apt-key add - < Release.key \
