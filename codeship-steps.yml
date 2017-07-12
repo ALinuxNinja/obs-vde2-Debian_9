@@ -1,0 +1,4 @@
+- name: indicate_done
+  tag: master
+  service: app
+  command: echo "Finished Compiling"
